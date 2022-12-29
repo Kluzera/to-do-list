@@ -1,7 +1,44 @@
-.list__item--done {
+.list {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+}
+
+.list__button {
+    height: 30px;
+    width: 30px;
+    background-color: hsl(348, 83%, 47%);
+    color: white;
+    border: none;
+}
+
+.list__button--done {
+    background-color: hsl(120, 100%, 20%);
+}
+
+.list__taskName--done {
     text-decoration: line-through;
 }
 
-.list {
-    padding: 0;
+.list__button:active {
+    background-color: hsl(348, 75%, 56%);
+    border: 2px solid hsl(346, 87%, 3%);
+    border-radius: 2px;
 }
+
+.list__button--done:active {
+    background-color: hsl(120, 77%, 41%);
+    border: 2px solid hsl(120, 95%, 8%);
+    border-radius: 2px;
+}
+
+.list__taskName {
+   word-break: break-word;
+}
+

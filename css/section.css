@@ -1,9 +1,14 @@
 .section {
     background-color: white;
-    padding: 10px;
 }
 
 .section_header {
     padding: 20px;
     margin: 0;
+    border: 1px solid hsl(0, 0%, 87%);
+}
+
+.section--under {
+    border: 1px solid hsl(0, 0%, 87%);
+    margin-top: 10px;
 }

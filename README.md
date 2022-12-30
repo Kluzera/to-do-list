@@ -9,7 +9,7 @@
 
 ### What technology i used:
 - convention BEM
-
 - using new features ee6+
-
 - javascript
+- css 
+- html

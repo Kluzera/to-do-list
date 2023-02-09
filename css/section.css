@@ -13,8 +13,36 @@
     margin-top: 10px;
 }
 
-.section__lowerHeader {
-    border-bottom: 1px solid hsl(0, 0%, 87%);
-    padding-bottom: 20px;
-    padding-left: 20px;
+.section__title {
+  font-size: 20px;
+  margin: 0;
+}
+
+.section__div{
+    display: grid;
+    grid-template-rows: auto;
+    align-content: center;
+}
+
+.buttons__button{
+    border: none;
+    color: teal;
+    background:transparent;
+    margin: 0 0 0 20px;
+    transition: color 0,3s;
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section__lowerheader {
+    border-bottom: 1px solid #ddd;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }

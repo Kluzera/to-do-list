@@ -74,19 +74,19 @@
     };
 
     const renderButtons = () => {
-      const addedTasks = document.querySelector(".js-tasks").innerHTML;
-      let htmlString = "";
-      if(addedTasks !==""){
-        htmlString += `
-        <div class="js-div">
-        <p class="js-paragraph">Lista zadań</p>
-        <button class="allDoneHide">Ukryj ukończone</button>
-        <button class=allDone>Ukończ wszystkie</button>
-        </div>`}
+      const addButtons = document.querySelector(".buttons");
       
-       
-      document.querySelector(".js-lowerHeader").innerHTML = htmlString;
-    };
+
+      if(!tasks.length){
+        addButtons.innerHTML = "";
+        return;
+      }
+        addButtons.innerHTML = `
+        <button class="buttons__button js-toggleHideDoneTasks">Ukryj ukończone</button>
+        <button class="buttons__button js-markAllDone">Ukończ wszystkie</button>
+        `;
+      };
+      
     //const bindButtonEvents = () => {
          //if(mamy przycisk){to przupinamy add.EventsListener}
    // };

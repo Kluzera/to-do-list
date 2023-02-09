@@ -17,7 +17,19 @@
     border: none;
     padding: 10px;
     cursor: pointer;
+    transition: 0.5s;
 }
+
+.form__addButton:active{
+    background:hsl(180, 100%, 36%);
+}
+
+.form__addButton:hover{
+    background:hsl(180, 100%, 30%);
+    transform: scale(1.1);
+}
+
+
 
 @media (max-width: 767px) {
     .form {

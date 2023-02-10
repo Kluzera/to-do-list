@@ -17,7 +17,7 @@
     border: none;
     padding: 10px;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .form__addButton:active{

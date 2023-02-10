@@ -14,6 +14,7 @@
     color: white;
     border: none;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .list__button--done {

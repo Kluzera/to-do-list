@@ -18,18 +18,21 @@
   margin: 0;
 }
 
-.section__div{
-    display: grid;
-    grid-template-rows: auto;
-    align-content: center;
-}
-
 .buttons__button{
     border: none;
-    color: teal;
+    color: hsl(180, 100%, 25%);
     background:transparent;
     margin: 0 0 0 20px;
-    transition: color 0,3s;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.buttons__button:hover{
+    color: hsl(180, 100%, 30%);
+}
+
+.buttons__button:active{
+    color: hsl(180, 100%, 35%);
 }
 
 .buttons{

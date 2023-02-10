@@ -4,7 +4,7 @@
   };
 
   let tasks = [];
-  //let hideDoneTasks = false;
+  let hideDoneTasks = false;
 
   const addNewTask = (newTaskContent) => {
      tasks = [
@@ -41,6 +41,11 @@
       done:true,
     }));
     render();
+  };
+
+  const toggleHideDoneTasks = () => {
+     hideDoneTasks = !hideDoneTasks;
+     render();
   };
 
   const bindEvents = () => {

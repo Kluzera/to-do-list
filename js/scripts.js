@@ -64,15 +64,14 @@
   const renderTasks = () => {
     let htmlTask = (task) => `
           <li class="
-          list${
-            task.done && hideDoneTasks ? " list__taskName--hidden" : ""
-          } js-task">
+          list__task${
+            task.done && hideDoneTasks ? " list__task--hidden" : ""
+          }">
           <button class="list__button list__button--done js-done">
           ${task.done ? "✔" : ""}
           </button>
           <span class="list__taskName${
-            task.done ? " list__taskName--done" : ""
-          }">
+            task.done ? " list__taskName--done" : ""}">
                 ${task.content}
             </span>
          <button class="list__button js-remove">🗑</button>

@@ -1,4 +1,4 @@
-.list{
+.list__task{
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-gap: 20px;
@@ -45,6 +45,6 @@
     border-radius: 2px;
 }
 
-.list__taskName--hidden {
+.list__task--hidden {
     display: none;
 }

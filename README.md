@@ -1,6 +1,6 @@
 # To-do-list
 ## Demo:https://kluzera.github.io/to-do-list/
-![to-do list](https://i.postimg.cc/Dy2352Tp/to-do-list.gif)
+![to-do list](https://i.postimg.cc/7hpR4xyR/ezgif-com-video-to-gif.gif)
 ### What can my page give you:
 - It is  page thanks which we can add new task to list.
 - Write your task click the button and it is ready.

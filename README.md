@@ -5,6 +5,7 @@
 - It is  page thanks which we can add new task to list.
 - Write your task click the button and it is ready.
 - We can mark which task is already done and we can remove from list.
+- You can mark all tasks as done and hide done ones.
 - This page help you to plan your time. 
 
 ### What technology I used:

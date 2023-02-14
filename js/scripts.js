@@ -62,9 +62,10 @@
   };
 
   const renderTasks = () => {
-    let htmlTask = (task) => `
-          <li class="
-          list__task${
+    let htmlString = "";
+          for (const task of tasks){
+            htmlString += `
+            <li class="list__task${
             task.done && hideDoneTasks ? " list__task--hidden" : ""
           }">
           <button class="list__button list__button--done js-done">
@@ -77,9 +78,9 @@
          <button class="list__button js-remove">🗑</button>
           </li>
           `;
-
-    const tasksElement = document.querySelector(".js-tasks");
-    tasksElement.innerHTML = tasks.map(htmlTask).join("");
+        }
+    document.querySelector(".js-tasks").innerHTML = htmlString;
+ 
   };
 
   const renderButtons = () => {
@@ -105,6 +106,7 @@
     if (markAllDoneButton) {
       markAllDoneButton.addEventListener("click", markAllDone);
     }
+    
     const toggleHideDoneTasksButton = document.querySelector(
       ".js-toggleHideDoneTasks"
     );

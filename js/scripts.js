@@ -63,7 +63,7 @@
 
   const renderTasks = () => {
     let htmlString = "";
-          for (const task of tasks){
+          for (const task of tasks) {
             htmlString += `
             <li class="list__task${
             task.done && hideDoneTasks ? " list__task--hidden" : ""
@@ -80,13 +80,12 @@
           `;
         }
     document.querySelector(".js-tasks").innerHTML = htmlString;
- 
   };
 
   const renderButtons = () => {
     const addButtons = document.querySelector(".buttons");
 
-    if (!tasks.length) {
+    if (tasks.length === 0) {
       addButtons.innerHTML = "";
       return;
     }

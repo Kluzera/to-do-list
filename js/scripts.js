@@ -75,7 +75,7 @@
           ${task.done ? "✔" : ""}
         </button>
           <span class="
-          list__taskName${task.done ? " list__taskName--done" : ""}
+           list__taskName${task.done ? " list__taskName--done" : ""}
           ">
             ${task.content}
           </span>
@@ -100,7 +100,7 @@
         ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
       </button>
         <button class="buttons__button js-markAllDone"
-         ${tasks.every(({ done }) => done) ? " disabled" : ""}>
+          ${tasks.every(({ done }) => done) ? " disabled" : ""}>
          Ukończ wszystkie
         </button>
       `;

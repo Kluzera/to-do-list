@@ -32,5 +32,7 @@
 @media (max-width: 767px) {
     .form {
         grid-template-columns: 1fr;
+    }  .form__addButton:hover{
+        transform: scale(1.04);
     }
   }

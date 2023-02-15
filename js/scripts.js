@@ -91,6 +91,7 @@
       addButtons.innerHTML = "";
       return;
     }
+    
     addButtons.innerHTML = `
         <button class="buttons__button js-toggleHideDoneTasks">
         ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone</button>

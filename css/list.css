@@ -1,3 +1,7 @@
+.list__tasks {
+    padding: 10px;
+}
+
 .list__task{
     display: grid;
     grid-template-columns: auto 1fr auto;
